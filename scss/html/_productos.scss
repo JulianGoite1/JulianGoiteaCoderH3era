@@ -1,0 +1,138 @@
+//importar archivos de SASS
+
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+
+
+/*media queri de celular*/
+
+.main-productos{
+    @include basic-pages;
+    
+
+    h2{
+        @include h2-secundario;
+    }
+
+    .style-fondo{
+        @include style-fondo;
+    
+    .style-h2{
+        @include style-h2;
+
+    }
+
+    .nueva{
+        @include produc-phone;
+        text-align: center;
+    
+    }
+
+    .over{
+        @include produc-phone;
+        text-align: center;
+    }
+
+    .skate{
+        @include produc-phone;
+        text-align: center;
+    }
+
+    .accesorios{
+        @include produc-phone;
+        text-align: center;
+    }
+    }
+
+    
+    
+}
+
+/*media queri de tablet*/
+
+.main-productos{
+    @media screen and (min-width:600px) {
+        background-color: $color-terciario;
+        width: 100%;
+    
+    .nueva{
+        @include home-tablet;
+    }
+
+    .over{
+        @include home-tablet;
+    }
+
+    .skate{
+        @include home-tablet;
+    }
+
+    .accesorios{
+        @include home-tablet;
+    }
+
+    .style-fondo{
+        width: 100%;
+        } 
+    }
+}
+
+/*meida queri de desktop*/
+
+.main-productos{
+    @media screen and (min-width:1024px) {
+        background-color: $color-terciario;
+        @include basic-pages;
+
+        .style-fondo{
+            width: 100%;
+        }
+    
+    .nueva .img-n-5, .img-n-6{
+        display: none;
+    }
+    .nueva{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        @include produc-desktop;
+        width: 100%;
+        text-align: center;
+    }
+
+    .over .img-o-5, .img-o-6{
+        display: none;
+    }
+    .over{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        @include produc-desktop;
+        width: 100%;
+
+    }
+
+    .skate .img-s-3, .img-s-5{
+        display: none;
+    }
+
+    .skate{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        @include produc-desktop;
+        width: 100%;
+    }
+
+    .accesorios .img-a-5, .img-a-6{
+        display: none;
+    }
+
+    .accesorios{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        @include produc-desktop;
+        width: 100%;
+    }
+
+    }
+}

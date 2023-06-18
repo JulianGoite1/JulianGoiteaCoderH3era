@@ -1,0 +1,16 @@
+/*Reset de mi Sitio Web*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Import
+
+@import "../scss/html/home";
+@import "../scss/html/productos";
+@import "../scss/html/catalogo";
+@import "../scss/html/provedores";
+@import "../scss/html/contacto";
+

@@ -1,0 +1,80 @@
+//importar archivos en SASS
+
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/*media queri de celular*/
+
+.main-contacto{
+    @include basic-pages;
+
+    h2{
+        @include h2-secundario;
+    }
+
+    .container{
+        text-align: center;
+    }
+
+    .formulario-2{
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        
+        
+
+      form legend {
+        background-color: $color-extra;
+        height: 2.5rem;
+        text-align: center;
+      
+        h3{
+            color: $color-fontprin;
+        }
+    }   
+    }
+}
+
+
+/*media queri de tablet*/
+
+.main-contacto{
+    @media screen and (min-width:600px) {
+        background-color: $color-terciario;
+    }
+
+    .formulario-2{
+        width: 90%;
+        
+    }
+}
+
+/*media queri de desktop*/
+
+.main-contacto{
+    @media screen and (min-width:1024px) {
+        background-color: $color-terciario;
+        @include basic-pages;
+    }
+
+    .formulario-1 .link-1, .link-2, .link-3{
+        text-decoration: none;
+        color: $color-fontsec;
+    }
+
+    .container{
+        text-align: center;
+    }
+
+    .formulario-2{
+        text-align: center;
+        width: 95%;
+        margin-bottom: 2rem;
+    
+    .boton{
+        padding: 8px;
+    }
+    }
+}

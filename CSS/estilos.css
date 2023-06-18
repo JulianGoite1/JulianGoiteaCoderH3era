@@ -1,0 +1,390 @@
+/*Reset de mi Sitio Web*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.main-provedores .style-provedores {
+  margin: 2rem; }
+
+/*estilos de la HTML index*/
+.header-home {
+  background-color: #6d0c0c;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 9rem; }
+  .header-home .header-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1rem; }
+  .header-home .logo-style {
+    margin: 1rem;
+    margin-top: 1rem; }
+  .header-home h1 {
+    color: whitesmoke;
+    text-align: right;
+    font-family: 'Vina Sans';
+    font-size: 2.5rem; }
+  .header-home .nav-color {
+    background-color: black; }
+    .header-home .nav-color .a-color {
+      color: whitesmoke;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 1,5rem;
+      text-align: center; }
+
+/*media queri de celular*/
+.main-home {
+  margin-top: 8.5rem;
+  text-align: center;
+  width: 100%; }
+  .main-home .img-fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0; }
+  .main-home .fondo-style {
+    background-color: gray;
+    height: 4rem;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center; }
+  .main-home .h2-style {
+    font-size: 2rem;
+    padding-top: 1rem;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .main-home .ver-mas {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem; }
+  .main-home .ofertas-unicas {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 33%);
+    row-gap: 1rem; }
+  .main-home .ofertas-unicas div .img1, .main-home .img2, .main-home .img7 {
+    margin-top: 1rem; }
+  .main-home .skate-shop .img4, .main-home .skate-shop .img5, .main-home .skate-shop .im6 {
+    margin-top: 1rem; }
+  .main-home .skate-shop {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 33%);
+    row-gap: 1rem; }
+
+/*media queri de tablet*/
+@media screen and (min-width: 600px) {
+  .main-home {
+    background-color: white; }
+    .main-home .main-home {
+      margin-top: 8.5rem;
+      text-align: center;
+      width: 100%;
+      height: 30vh; }
+    .main-home .img7 {
+      display: block; }
+    .main-home .ofertas-unicas {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto; }
+    .main-home .skate-shop {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto; } }
+
+/*media queri de desktop*/
+@media screen and (min-width: 1024px) {
+  .main-home {
+    background-color: white; }
+    .main-home .main-home {
+      margin-top: 8.5rem;
+      text-align: center;
+      width: 100%; } }
+
+.footer-home {
+  background-color: #6d0c0c;
+  text-align: center;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main-provedores .style-provedores {
+  margin: 2rem; }
+
+/*media queri de celular*/
+.main-productos {
+  margin-top: 8.5rem;
+  text-align: center;
+  width: 100%; }
+  .main-productos h2 {
+    font-family: 'Vina Sans';
+    font-size: 4.5rem;
+    text-align: center;
+    color: black; }
+  .main-productos .style-fondo {
+    background-color: gray;
+    height: 2rem;
+    width: 100%; }
+    .main-productos .style-fondo .style-h2 {
+      color: whitesmoke;
+      text-align: center; }
+    .main-productos .style-fondo .nueva {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      text-align: center; }
+    .main-productos .style-fondo .over {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      text-align: center; }
+    .main-productos .style-fondo .skate {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      text-align: center; }
+    .main-productos .style-fondo .accesorios {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      text-align: center; }
+
+/*media queri de tablet*/
+@media screen and (min-width: 600px) {
+  .main-productos {
+    background-color: white;
+    width: 100%; }
+    .main-productos .nueva {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto; }
+    .main-productos .over {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto; }
+    .main-productos .skate {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto; }
+    .main-productos .accesorios {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto; }
+    .main-productos .style-fondo {
+      width: 100%; } }
+
+/*meida queri de desktop*/
+@media screen and (min-width: 1024px) {
+  .main-productos {
+    background-color: white;
+    margin-top: 8.5rem;
+    text-align: center;
+    width: 100%; }
+    .main-productos .style-fondo {
+      width: 100%; }
+    .main-productos .nueva .img-n-5, .main-productos .img-n-6 {
+      display: none; }
+    .main-productos .nueva {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-row: auto;
+      width: 100%;
+      text-align: center; }
+    .main-productos .over .img-o-5, .main-productos .img-o-6 {
+      display: none; }
+    .main-productos .over {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-row: auto;
+      width: 100%; }
+    .main-productos .skate .img-s-3, .main-productos .img-s-5 {
+      display: none; }
+    .main-productos .skate {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-row: auto;
+      width: 100%; }
+    .main-productos .accesorios .img-a-5, .main-productos .img-a-6 {
+      display: none; }
+    .main-productos .accesorios {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-row: auto;
+      width: 100%; } }
+
+.main-provedores .style-provedores {
+  margin: 2rem; }
+
+/*media queri de celular*/
+.main-catalogo {
+  margin-top: 8.5rem;
+  text-align: center;
+  width: 100%; }
+  .main-catalogo h2 {
+    font-family: 'Vina Sans';
+    font-size: 4.5rem;
+    text-align: center;
+    color: black; }
+  .main-catalogo .ver-mas {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem; }
+  .main-catalogo .catalogo-style {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr  1fr 1fr 1fr 1fr;
+    margin-left: 5rem; }
+  .main-catalogo .catalogo-style {
+    text-align: center; }
+    .main-catalogo .catalogo-style .catalogo-style .img-cat-6, .main-catalogo .catalogo-style .img-cat-7, .main-catalogo .catalogo-style .img-cat-9 {
+      display: none; }
+    .main-catalogo .catalogo-style .catalogo-style .img-cat-1, .main-catalogo .catalogo-style .img-cat-2, .main-catalogo .catalogo-style .img-cat-3, .main-catalogo .catalogo-style .img-cat-4, .main-catalogo .catalogo-style .img-cat-5 {
+      margin-top: 1rem; }
+
+/*media queri de tablet*/
+@media screen and (min-width: 600px) {
+  .main-catalogo {
+    background-color: white;
+    margin-top: 8.5rem;
+    text-align: center;
+    width: 100%; }
+    .main-catalogo .catalogo-style img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin: 1rem; }
+    .main-catalogo .catalogo-style {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      column-gap: 1rem;
+      row-gap: 1rem;
+      margin: 1rem;
+      margin-right: 3rem; } }
+
+/*media queri de desktop*/
+@media screen and (min-width: 1024px) {
+  .main-catalogo {
+    background-color: white;
+    margin-top: 8.5rem;
+    text-align: center;
+    width: 100%; }
+    .main-catalogo .catalogo-style .img-cat-6 {
+      display: block; }
+    .main-catalogo .catalogo-style .img-cat-7 {
+      display: block; }
+    .main-catalogo .catalogo-style .img-cat-9 {
+      display: block; }
+    .main-catalogo .catalogo-style {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      column-gap: 1rem;
+      row-gap: 1rem; } }
+
+.main-provedores .style-provedores {
+  margin: 2rem; }
+
+/*media queri de celular*/
+.main-provedores {
+  margin-top: 8.5rem;
+  text-align: center;
+  width: 100%; }
+  .main-provedores h2 {
+    font-family: 'Vina Sans';
+    font-size: 4.5rem;
+    text-align: center;
+    color: black; }
+  .main-provedores .style-provedores h3 {
+    margin-top: 1rem;
+    font-size: 3rem; }
+
+/*media queri de tablet*/
+@media screen and (min-width: 600px) {
+  .main-provedores {
+    background-color: white;
+    margin-top: 8.5rem;
+    text-align: center;
+    width: 100%; } }
+
+/*media queri de desktop*/
+@media screen and (min-width: 1024px) {
+  .main-provedores {
+    background-color: white;
+    margin-top: 8.5rem;
+    text-align: center;
+    width: 100%; } }
+
+.main-provedores .style-provedores {
+  margin: 2rem; }
+
+/*media queri de celular*/
+.main-contacto {
+  margin-top: 8.5rem;
+  text-align: center;
+  width: 100%; }
+  .main-contacto h2 {
+    font-family: 'Vina Sans';
+    font-size: 4.5rem;
+    text-align: center;
+    color: black; }
+  .main-contacto .container {
+    text-align: center; }
+  .main-contacto .formulario-2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 1rem; }
+    .main-contacto .formulario-2 form legend {
+      background-color: gray;
+      height: 2.5rem;
+      text-align: center; }
+      .main-contacto .formulario-2 form legend h3 {
+        color: whitesmoke; }
+
+/*media queri de tablet*/
+@media screen and (min-width: 600px) {
+  .main-contacto {
+    background-color: white; } }
+
+.main-contacto .formulario-2 {
+  width: 90%; }
+
+/*media queri de desktop*/
+@media screen and (min-width: 1024px) {
+  .main-contacto {
+    background-color: white;
+    margin-top: 8.5rem;
+    text-align: center;
+    width: 100%; } }
+
+.main-contacto .formulario-1 .link-1, .main-contacto .link-2, .main-contacto .link-3 {
+  text-decoration: none;
+  color: black; }
+
+.main-contacto .container {
+  text-align: center; }
+
+.main-contacto .formulario-2 {
+  text-align: center;
+  width: 95%;
+  margin-bottom: 2rem; }
+  .main-contacto .formulario-2 .boton {
+    padding: 8px; }

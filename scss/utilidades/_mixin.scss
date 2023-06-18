@@ -1,0 +1,130 @@
+// mixin
+
+//mixin con parametros
+
+@mixin productos($width, $height ){
+    width: $width ;
+    height: $height ;
+    background-color: black;
+}
+
+//mixin sin parametros
+
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+@mixin h1-style{
+    color: $color-fontprin ;
+    text-align: right;
+    font-family: 'Vina Sans';
+    font-size: 2.5rem;
+
+}
+
+@mixin home-phone{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 33%);
+    row-gap: 1rem;
+}
+
+@mixin home-tablet{
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+}
+
+@mixin h2{
+    font-size: 2rem;
+    padding-top: 1rem;
+    color: $color-fontprin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin h2-secundario{
+    font-family: 'Vina Sans';
+    font-size: 4.5rem;
+    text-align: center;
+    color: $color-fontsec;
+
+}
+
+@mixin fondo-h2{
+    background-color:$color-extra;
+    height: 4rem;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+@mixin basic-pages{
+    margin-top: 8.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+@mixin style-fondo{
+    background-color: $color-extra;
+    height: 2rem;
+    width: 100%;
+}
+
+@mixin style-h2{
+    color: $color-fontprin;
+    text-align: center;
+}
+
+@mixin produc-desktop{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: auto;
+    
+}
+
+@mixin produc-phone{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    
+}
+
+@mixin catalogo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+@mixin footer-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin style-catalogo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr  1fr 1fr 1fr 1fr;
+    
+     }
+
+@mixin style-catalogo-tbt{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows:1fr 1fr ;
+}
+
+@mixin style-catalogo-dkp{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+}

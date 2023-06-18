@@ -1,0 +1,43 @@
+//importar archivos en SASS
+
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/*media queri de celular*/
+
+.main-provedores{
+    @include basic-pages;
+  
+    h2{
+        @include h2-secundario;
+    }
+
+    .style-provedores{
+        @extend %provedores;
+    
+    h3{
+        margin-top: 1rem;
+        font-size: 3rem;
+    }
+    }
+
+}
+
+/*media queri de tablet*/
+
+.main-provedores{
+    @media screen and (min-width:600px) {
+        background-color: $color-terciario;
+        @include basic-pages;
+    }
+}
+ 
+/*media queri de desktop*/
+
+.main-provedores{
+    @media screen and (min-width:1024px) {
+        background-color: $color-terciario;
+        @include basic-pages;
+    }
+}
